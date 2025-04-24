@@ -3,7 +3,7 @@ const { title, description } = Astro.props;
 ---
 
 <li class="pl-6 text-[555250]">
-  <span class="font-bold text-[#605754]">{title}: </span>
+  {title && <span class="font-bold text-[#605754]">{title}: </span>}
   <p class="text-[#615754] inline-block">
     {description}
   </p>
