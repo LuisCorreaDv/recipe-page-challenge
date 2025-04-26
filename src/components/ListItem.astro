@@ -2,9 +2,9 @@
 const { title, description } = Astro.props;
 ---
 
-<li class="pl-6 text-[555250]">
-  {title && <span class="font-bold text-[#605754]">{title}: </span>}
-  <p class="text-[#615754] inline-block">
+<li class="pl-6 text-[555250] mb-2">
+  <p class="text-[#615754]">
+    {title && <span class="font-bold text-[#605754] whitespace-nowrap">{title}: </span>}
     {description}
   </p>
 </li>
