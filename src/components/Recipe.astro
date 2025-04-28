@@ -3,9 +3,10 @@ import Ingredients from './Ingredients.astro';
 import Instructions from './Instructions.astro';
 import Nutrition from './Nutrition.astro';
 import Preparation from './Preparation.astro';
+import recipeImage from '../assets/images/image-omelette.jpeg';
 ---
 <div class="bg-[#ffffff] w-full max-w-3xl flex flex-col justify-center items-center rounded-lg p-8 my-6">
-    <img src="/src/assets/images/image-omelette.jpeg" alt="Recipe image" class="rounded-lg mb-4" />
+    <img src={recipeImage.src} alt="Recipe image" class="rounded-lg mb-4" />
     <header class="flex flex-col justify-center gap-5">
         <h1 class="text-[42px] text-[#32312f] font-semibold pt-5">Simple Omelette Recipe</h1>
         <p>An easy quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables or meats.</p>
